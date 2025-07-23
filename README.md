@@ -30,7 +30,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: []()
+- Solution URL: [https://www.frontendmentor.io/solutions/responsive-article-preview-component-with-tailwind-css-and-javascript-OW0LMFdsS9](https://www.frontendmentor.io/solutions/responsive-article-preview-component-with-tailwind-css-and-javascript-OW0LMFdsS9)
 - Live Site URL: [https://fadymas.github.io/article-preview-component-master/](https://fadymas.github.io/article-preview-component-master/)
 
 ## My process
