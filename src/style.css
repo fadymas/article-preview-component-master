@@ -1,0 +1,7 @@
+:root {
+    --font-main: "Manrope", sans-serif;
+}
+
+@import 'tailwindcss';
+
+@config "../tailwind.config.js"

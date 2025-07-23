@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./dist/style.min.css" />
+    <script
+      defer
+      src="https://kit.fontawesome.com/9447115d13.js"
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./dist/main.js"></script>
+
+    <title>Frontend Mentor | Article preview component</title>
+  </head>
+  <body
+    class="bg-Light-grayish-blue place-items-center font-[var(--font-main)]"
+  >
+    <!-- Main layout container -->
+    <main
+      class="container h-full grid max-[639px]:max-w-[23.4375rem] px-[23px] xl:px-[275px] mt-18 xl:mt-65 grid-cols-1 grid-rows-[200px_minmax(0,1fr)] sm:grid-rows-[350px_minmax(0,1fr)] md:grid-rows-[420px_minmax(0,1fr)] xl:grid-rows-1 xl:grid-cols-[285px_minmax(0,1fr)]"
+    >
+      <!-- Image Section -->
+      <figure>
+        <img
+          src="./images/drawers.jpg"
+          alt="drawers photo"
+          loading="lazy"
+          class="w-full h-full object-cover object-[center_30%] lg:object-bottom xl:object-[left_center] rounded-t-xl xl:rounded-t-none xl:rounded-l-xl"
+        />
+      </figure>
+
+      <!-- Main content Section -->
+      <section
+        class="main__info relative flex flex-col gap-3 bg-white rounded-b-xl xl:rounded-bl-none xl:rounded-r-xl sm:text-xl xl:text-[16px] xl:after:absolute xl:after:content-[''] xl:after:border-[18px] xl:after:border-solid xl:after:border-t-Very-dark-grayish-blue xl:after:border-transparent xl:after:right-8 xl:after:bottom-15.5 xl:after:opacity-0 xl:after:transition-all xl:after:duration-100"
+      >
+        <!-- Article Title -->
+        <h1
+          class="px-[2.08rem] pt-9 font-bold tracking-[.01rem] text-[1em]/normal xl:text-xl/normal xl:tracking-[.0125rem] text-Very-dark-grayish-blue"
+        >
+          Shift the overall look and feel by adding these wonderful touches to
+          furniture in your home
+        </h1>
+
+        <!-- Article Text -->
+        <p
+          class="px-[2.08rem] text-[.8125em]/normal font-medium tracking-[.13px] text-Desaturated-dark-blue"
+        >
+          Ever been in a room and felt like something was missing? Perhaps it
+          felt slightly bare and uninviting. I’ve got some simple tips to help
+          you make any room feel complete.
+        </p>
+
+        <!-- Seller Info + Share Button -->
+        <div
+          class="main__seller flex justify-between items-center px-[2.08rem] py-4 xl:pt-2 xl:pb-7.5 mt-2.5 xl:mt-0"
+        >
+          <!-- Seller Details -->
+          <div class="seller__info flex items-center gap-4">
+            <figure>
+              <img
+                src="./images/avatar-michelle.jpg"
+                alt="seller image"
+                loading="lazy"
+                class="w-10 rounded-full"
+              />
+            </figure>
+            <p
+              class="text-[.8125em] font-bold tracking-[.0081em] text-Very-dark-grayish-blue"
+            >
+              Michelle Appleton
+              <span class="block font-medium text-Grayish-blue"
+                >28 Jun 2020</span
+              >
+            </p>
+          </div>
+
+          <!-- Share Button -->
+          <button
+            class="w-8 h-8 flex items-center justify-center rounded-full bg-Light-grayish-blue cursor-pointer hover:scale-120 transition-colors"
+          >
+            <i class="fa-solid fa-share text-Desaturated-dark-blue"></i>
+          </button>
+        </div>
+
+        <!-- Share Options Panel -->
+        <div
+          class="main__share absolute bottom-0 w-full flex items-center justify-between px-[2.08rem] py-5 mt-2.5 rounded-b-xl bg-Very-dark-grayish-blue opacity-0 transition-all duration-100 ease-in-out xl:w-62 xl:h-13.5 xl:rounded-[.625rem] xl:px-9 xl:py-0 xl:justify-center xl:mt-0 xl:-right-17 xl:bottom-23.5"
+        >
+          <!-- Social Icons and Label -->
+          <div class="share__social flex gap-4 items-center">
+            <p
+              class="text-[.8125em] font-medium tracking-[.3088em] text-Grayish-blue"
+            >
+              SHARE
+            </p>
+            <figure class="flex items-center gap-4 h-5">
+              <img
+                src="./images/icon-facebook.svg"
+                alt="facebook icon"
+                class="hover:scale-120 transition-transform"
+              />
+              <img
+                src="./images/icon-twitter.svg"
+                alt="twitter icon"
+                class="w-5 h-[1.0156rem] hover:scale-120 transition-transform"
+              />
+              <img
+                src="./images/icon-pinterest.svg"
+                alt="pinterest icon"
+                class="hover:scale-120 transition-transform"
+              />
+            </figure>
+          </div>
+
+          <!-- Mobile Close Share Button -->
+          <button
+            class="w-8 h-8 xl:hidden flex items-center justify-center rounded-full bg-Desaturated-dark-blue cursor-pointer hover:scale-120 transition-transform"
+          >
+            <i class="fa-solid fa-share text-Light-grayish-blue"></i>
+          </button>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
